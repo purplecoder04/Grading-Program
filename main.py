@@ -11,6 +11,18 @@ student_scores = {
 
 
 #TODO-2: Write your code below to add the grades to student_grades.👇
+student_grades = {}
+for key, value in student_scores.items():
+  if value in range(91, 101):
+    student_grades[key]="outstanding"
+  elif value in range(81, 91):
+    student_grades[key] = "Exceeds Expectations"
+  elif value in range(71, 81):
+    student_grades[key]= "Acceptable"
+  else:
+    student_grades[key] ="Fail"
+    
+    
 
     
 
